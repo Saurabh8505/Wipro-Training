@@ -3,15 +3,19 @@ import java.util.Scanner;
 public class customExp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your Number: ");
+        System.out.print("Enter your Number: ");
         
-        try{
+        try {
             int num = sc.nextInt();
-            if(num >10){
-             throw new MyCustomException("Error: Your input is greater then 10 or less then 10.");
+            if (num != 10) { 
+                throw new MyCustomException("Error: Your input is not equal to 10.");
             }
-        }catch(Exception e){
-            System.out.println(e);
+            System.out.println("Your input is valid: " + num);
+        } catch (MyCustomException e) {
+            System.out.println(e.getMessage()); // Printing only the custom error message
+        }  finally {
+            System.out.println("Program execution completed.");
+            sc.close(); 
         }
         
 
