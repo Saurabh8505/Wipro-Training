@@ -6,13 +6,13 @@ class crediCard extends PaymentMethod{
     double TRANSACTION_FEE = 2.0;
     void processPayment(double amount){
         double totalAmount = amount + TRANSACTION_FEE;
-        System.out.println("Processing Credit Card payment of $" + amount + " with fee. Total: $" + totalAmount);
+        System.out.println("Processing Credit Card payment of" + amount + " with fee. Total: $" + totalAmount);
     }
 
 }
 class PayPal extends PaymentMethod{
     void processPayment(double amount){
-        System.out.println("Processing Online payment of $" + amount + " with 0 Extra Charges");
+        System.out.println("Processing Online payment of" + amount + " with 0 Extra Charges");
      }
 
 }

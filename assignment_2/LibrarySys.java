@@ -30,7 +30,7 @@ class items{
 class books extends items{
     String genre;
     books(String title, String author, int publicationYear, String genre) {
-        super(title, author, publicationYear);  // Call the parent class constructor
+        super(title, author, publicationYear); 
         this.genre = genre;
     }
     void displayDetails() {

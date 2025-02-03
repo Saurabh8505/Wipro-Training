@@ -19,7 +19,7 @@ public class ShapeDrawApp {
         shapes[0] = new circles();
         shapes[1] = new rectangle();
 
-        // Display details and calculate salaries using polymorphism
+        
         for (shape shape : shapes) {
             shape.draw();
             System.out.println();
